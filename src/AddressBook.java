@@ -5,11 +5,6 @@ public class AddressBook
     // Collection
     private ArrayList<BuddyInfo> buddyList;
 
-    /**
-     *
-     * Constructor for AddressBook
-     *
-     */
     public AddressBook()
     {
         buddyList = new ArrayList<BuddyInfo>();
@@ -37,7 +32,13 @@ public class AddressBook
 
     public static void main(String[] args)
     {
-        System.out.println("Address Book");
+        // Construct buddyList
+        AddressBook addressBook = new AddressBook();
+
+        // Create BuddyInfo object, add it to buddyList, then remove it
+        BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
     }
 
 }
