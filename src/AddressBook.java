@@ -39,6 +39,8 @@ public class AddressBook
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
+        
+        // Test pull from GitHub
     }
 
 }
